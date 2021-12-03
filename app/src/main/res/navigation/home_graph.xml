@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_graph"
+    app:startDestination="@id/home_destination">
+
+    <fragment
+        android:id="@+id/home_destination"
+        android:name="com.example.todoapp.view.home.ListFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/go_to_compose"
+            app:destination="@id/compose_destination" />
+        <action
+            android:id="@+id/go_to_detail"
+            app:destination="@id/detail_destination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/compose_destination"
+        android:name="com.example.todoapp.view.home.ComposeFragment"
+        android:label="@string/compose"
+        tools:layout="@layout/fragment_compose" />
+    <fragment
+        android:id="@+id/detail_destination"
+        android:name="com.example.todoapp.view.home.DetailFragment"
+        android:label="To Do Detail"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="todo_detail"
+            app:argType="com.example.todoapp.model.ToDoData" />
+        <action
+            android:id="@+id/go_to_edit"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.todoapp.view.home.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <argument
+            android:name="todo_detail"
+            app:argType="com.example.todoapp.model.ToDoData" />
+    </fragment>
+</navigation>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ToDo App</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="log_in">Log In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="log_out">Log Out</string>
+    <string name="sync">Sync</string>
+    <string name="back">Back</string>
+    <string name="add_todo">Add ToDo</string>
+    <string name="edit_list">Edit List</string>
+    <string name="compose">Compose</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="sw_completed">Completed?</string>
+    <string name="logout">Logout</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+</resources>
